@@ -3,7 +3,7 @@ document.querySelector("#getButton").addEventListener("click", apiRequest)
 async function apiRequest() {
     const alienName = document.querySelector("select").value
     try {
-        const response = await fetch(`https://star-trek-api-demoz.herokuapp.com/api/${alienName}`)
+        const response = await fetch(`https://humanoid-alien-database-api.herokuapp.com/api/${alienName}`)
         const data = await response.json()
         console.log(data)
 
